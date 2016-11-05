@@ -28,11 +28,19 @@ $con = mysqli_connect($hostname, $username, $password);
 
   if(!mysqli_query($con,$sql))
   {
-	  echo 'Not Inserted';
+	   echo 
+	  "<script>
+		alert('Failed!');
+		window.location.href='MyForm.html';
+	   </script>";
   }
   else
   {
-	  echo 'Inserted';
+	  echo 
+	  "<script>
+		alert('Success!');
+		window.location.href='MyForm.html';
+	   </script>";
   }
-header("refresh:2; url=MyForm.html");
+  
 ?>
