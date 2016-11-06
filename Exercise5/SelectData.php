@@ -31,7 +31,7 @@ $con = mysqli_connect($hostname, $username, $password);
         $NameResult = $row["Name"];
 		$NicknameResult = $row["Nickname"];
 		$EmailResult = $row["Email"];
-		$HomeAddressResult = $row["Home Address"];
+		$HomeAddressResult = $row["Home_Address"];
 		$CommentResult = $row["Comment"];
 		$GenderResult = $row["Gender"];
 		$CellphoneResult = $row["Cellphone"];
@@ -169,7 +169,7 @@ textarea
  <br><br>
  <label for="cellphone">Cellphone :</label> <input type="text" name="cellphone" id = "7" value="<?php echo $CellphoneResult ?>" disabled>
  <br><br>
- <center><input type="submit" name="save_btn" value="Save" id = "8" formaction = 'Update.php' ><input type="submit" name="delete_btn" value="Delete"></center>
+ <center><input type="submit" name="save_btn" value="Save" id = "8" formaction = 'Update.php' ><input type="submit" name="delete_btn" value="Delete" formaction= 'DeleteData.php'></center>
  </form>
  <center><button onclick = "Edit()">Edit</button></center>
 </div>
@@ -197,6 +197,10 @@ function Edit()
   }
  else 
 	{
+		echo "<script>
+		alert('No Record Found!');
+		window.location.href='MyReadEditDelete.html';
+	   </script>";
 	}
  
 ?>
