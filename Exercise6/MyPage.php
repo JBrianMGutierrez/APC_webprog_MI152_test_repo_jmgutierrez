@@ -54,10 +54,10 @@
 <HR>
 
 <ul class="nav">
-<li style="float:center"><a class="active" href="MyPage.html">Home</a></li>
-  <li><a href="MyTrivia.html">Trivias</a></li>
-  <li><a href="MyForm.html">Form</a></li>
-  <li><a href="MyReadEditDelete.html">Search</a></li>
+<li style="float:center"><a class="active" href="MyPage.php">Home</a></li>
+  <li><a href="MyTrivia.php">Trivias</a></li>
+  <li><a href="MyForm.php">Form</a></li>
+  <li><a href="MyReadEditDelete.php">Search</a></li>
 </ul>
 </ul>
 

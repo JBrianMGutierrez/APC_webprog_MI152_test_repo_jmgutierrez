@@ -1,3 +1,4 @@
+<!DOCTYPE HTML>  
 <html>
 <body background="Pictures\Background.jpg">
 <head>
@@ -94,7 +95,6 @@ textarea
 {
     resize: none;
 }
-
 </style>
 </head>
 <body> 
@@ -102,34 +102,45 @@ textarea
 <hr>
 <font size="3.5">
 <ul class="nav">
-  <li><a href="MyPage.html">Home</a></li>
-  <li><a href="MyTrivia.html">Trivia</a></li>
-  <li><a href="MyForm.html">Form</a></li>
-  <li style="float:center"><a class="active" href="test.php">Search</a></li>
+  <li><a href="MyPage.php">Home</a></li>
+  <li><a href="MyTrivia.php">Trivia</a></li>
+  <li style="float:center"><a class="active" href="MyReadEditDelete.php">Form</a></li>
+  <li><a href="MyReadEditDelete.php">Search</a></li>
+  
 </ul>
 </ul> 
+<h2><center><font color = red>If you are a cute-looking girl I suggest to submit a Form if not, you can still submit!</center></font></h2>
 <div class ="box1">
 <center>
-<form action="SelectData.php" method="post">
- <label for="search"></label> <input type="text" name="search" id = "9"> <input type="submit" name="search_btn" value="Search" id = "10">
-<br><br>
-<br><br>
- <label for="name">Name :</label> <input type="text" name="name" id = "1" value="" disabled>
- <br><br>
-  <label for="name">Nickname :</label> <input type="text" name="nickname" id = "2" disabled>
+<p><span class="error">* required field.</span></p>
+<form action="MyForm_Controller.php" method="post">
+
+  <label for="name">Name :</label> <input type="text" name="name">
+  <span class="error">*</span>
   <br><br>
-  <label for="email">Email :</label> <input type="text" name="email" id = "3" disabled>
+  <label for="name">Nickname :</label> <input type="text" name="nickname">
+  <span class="error">*</span>
   <br><br>
-  <label for="homeaddress">Home Address :</label> <input type="text" name="homeaddress" id = "4" disabled>
+  <label for="email">Email :</label> <input type="text" name="email">
+  <span class="error">*</span>
   <br><br>
-  <label for="comment">Comment :</label> <textarea wrap="hard" name="comment" rows="5" cols="40" id = "5" disabled ></textarea>
+  <label for="homeaddress">Home Address :</label> <input type="text" name="homeaddress">
+  <span class="error">*</span>
   <br><br>
-  <label for="gender">Gender :</label> <input type="text" name="gender" id = "6" disabled>
+  <label for="comment">Comment :</label> <textarea wrap="hard" name="comment" rows="5" cols="40" ></textarea>
   <br><br>
-  <label for="cellphone">Cellphone # :</label> <input type="text" name="cellphone" id = "7" disabled>
+  
+  <label for="gender">Gender :</label>
+  <input type="radio" name="gender" value="female">Female
+  <input type="radio" name="gender" value="male" checked="checked">Male
   <br><br>
+  <label for="cellphone">Cellphone # :</label> <input type="text" name="cellphone">
+  <br><br>
+  
+  <center><input type="submit" name="submit" value="Submit"></center>
+ 
 </form>
-<center><button onclick ="Edit()" disabled>Edit</button><input type="submit" name="save_btn" value="Save" id = "8" disabled> <input type="submit" name="delete_btn" value="Delete" disabled></center>
+</center>
 </div>
 </font>
 <hr>
