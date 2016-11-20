@@ -70,7 +70,6 @@ p
   <li><a href="MyPage.php">Home</a></li>
   <li style="float:center"><a class="active" href="MyTrivia.php">Trivias</a></li>
   <li><a href="MyForm.php">Form</a></li>
-  <li><a href="MyReadEditDelete.php">Search</a></li>
 </ul>
 </ul>
 

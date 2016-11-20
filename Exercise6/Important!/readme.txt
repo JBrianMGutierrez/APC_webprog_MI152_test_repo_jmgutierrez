@@ -1,0 +1,1 @@
+Ofcourse you need to configure the Framework inorder to get to work for you to do that is to copy/paste the files into the right folders in codeigniter file folder and create a database named "mydatabase" table name "myinput". in config folder change the route.php route[default_controller] ="name of the controller"
