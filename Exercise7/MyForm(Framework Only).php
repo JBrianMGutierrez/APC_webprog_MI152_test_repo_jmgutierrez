@@ -104,32 +104,14 @@ textarea
 <ul class="nav">
   <li><a href="MyPage.php">Home</a></li>
   <li><a href="MyTrivia.php">Trivia</a></li>
-  <li><a href="MyForm.php">Form</a></li>
-  <li style="float:center"><a class="active" href="test.php">Search</a></li>
+  <li style="float:center"><a class="active" href="MyForm.php">Form</a></li>
 </ul>
 </ul> 
 <div class ="box1">
 <center>
-<form action="SelectData.php" method="post">
- <label for="search"></label> <input type="text" name="search" id = "9"> <input type="submit" name="search_btn" value="Search" id = "10">
-<br><br>
-<br><br>
- <label for="name">Name :</label> <input type="text" name="name" id = "1" value="" disabled>
- <br><br>
-  <label for="name">Nickname :</label> <input type="text" name="nickname" id = "2" disabled>
-  <br><br>
-  <label for="email">Email :</label> <input type="text" name="email" id = "3" disabled>
-  <br><br>
-  <label for="homeaddress">Home Address :</label> <input type="text" name="homeaddress" id = "4" disabled>
-  <br><br>
-  <label for="comment">Comment :</label> <textarea wrap="hard" name="comment" rows="5" cols="40" id = "5" disabled ></textarea>
-  <br><br>
-  <label for="gender">Gender :</label> <input type="text" name="gender" id = "6" disabled>
-  <br><br>
-  <label for="cellphone">Cellphone # :</label> <input type="text" name="cellphone" id = "7" disabled>
-  <br><br>
+<form>
+
 </form>
-<center><button onclick ="Edit()" disabled>Edit</button><input type="submit" name="save_btn" value="Save" id = "8" disabled> <input type="submit" name="delete_btn" value="Delete" disabled></center>
 </div>
 </font>
 <hr>
