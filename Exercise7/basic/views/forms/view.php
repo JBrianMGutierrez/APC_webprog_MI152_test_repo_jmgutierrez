@@ -16,21 +16,24 @@ $this->params['breadcrumbs'][] = $this->title;
 
 		<p>
 		<?php
-			if (Yii::$app->user->isGuest) {
+			if (Yii::$app->user->isGuest)
+			{
 				
-			} elseif(Yii::$app->user->identity->username) {
-				echo Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary'])	
-				and Html::a('Delete', ['delete', 'id' => $model->id], 
+			} 
+			elseif(Yii::$app->user->identity->username)
+			{
+				echo Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']);
+				echo Html::a('Delete', ['delete', 'id' => $model->id], 
+				[
+					'class' => 'btn btn-danger',
+					'data' => 
 					[
-						'class' => 'btn btn-danger',
-						'data' => [
-							'confirm' => 'Are you sure you want to delete this item?',
-							'method' => 'post',
-						],
-					]) 
+						'confirm' => 'Are you sure you want to delete this item?',
+						'method' => 'post',
+					],
+				]);
 			}
-		<?
-
+		?>
 		</p>
 
 		<?= DetailView::widget([
