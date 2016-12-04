@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 01, 2016 at 01:36 PM
+-- Generation Time: Dec 04, 2016 at 11:55 AM
 -- Server version: 10.1.16-MariaDB
 -- PHP Version: 5.6.24
 
@@ -42,9 +42,9 @@ CREATE TABLE `myinput2` (
 --
 
 INSERT INTO `myinput2` (`id`, `name`, `nickname`, `email`, `home_address`, `comment`, `gender`, `cellphone`) VALUES
-(1, 'Jheriza Tan', 'Cheri-tan', 'Jinxunen@yahoo.com', 'Paranaque Las Pinas BF Homes', 'Hi crush ni alpe na di ko aagawin kahit kelan kasi masakit', 'Female', 'asdsad'),
-(2, 'Jheriza Tan', 'Jheriza', 'Jinxgunen@yahoo.com', 'Paranaque Las Pinas BF Homes', 'Hi crush ni alpe na di ko aagawin kahit kelan kasi masakit', 'Male', '8296339'),
-(3, 'Allyssa Millar', 'Allyssa', 'jinxmugen@gmail.com', 'Makati', 'test', 'Female', '123123');
+(1, 'Jheriza Tan', 'Cheri-tan', 'kitsunenoshrio@gmail.com', 'Paranaque Las Pinas BF Homes', 'Hi crush ni alpe na di ko aagawin kahit kelan kasi masakit', 'Female', '8296339'),
+(3, 'Allyssa Millar', 'Allyssa', 'jinxmugen@gmail.com', 'Makati', 'test', 'Female', '123123'),
+(6, 'Nieva Jane Balungcas', 'Nieva', 'johnbrianmgutierrez@yahoo.com', 'Somewhere in LRT', 'AB Psychology and Miss Psychology ', 'Female', '8296339');
 
 --
 -- Indexes for dumped tables
@@ -64,7 +64,7 @@ ALTER TABLE `myinput2`
 -- AUTO_INCREMENT for table `myinput2`
 --
 ALTER TABLE `myinput2`
-  MODIFY `id` int(40) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(40) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

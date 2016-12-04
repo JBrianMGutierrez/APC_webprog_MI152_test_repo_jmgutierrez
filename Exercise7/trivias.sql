@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 01, 2016 at 01:35 PM
+-- Generation Time: Dec 04, 2016 at 11:55 AM
 -- Server version: 10.1.16-MariaDB
 -- PHP Version: 5.6.24
 
@@ -37,11 +37,16 @@ CREATE TABLE `trivias` (
 --
 
 INSERT INTO `trivias` (`id`, `question`, `answer`) VALUES
-(1, 'Do you have a crush on someone?', 'Yes. I don\'t know her name though but she\'s an APC Psychology Student.'),
+(1, 'Do you have a crush on someone?', 'Yes. Her name is Nieva Jane Balungcas she\'s an APC Psychology Student more than that she\'s also Ms.Psychology also very famous on social media she got followers of 1,569 people.'),
 (2, 'How old are you now?', 'About 20 yrs old. but I still look like a 16 yrs old. boy'),
 (3, 'Which Kpop Idol do you like the most?', 'Well that would be Im Nayeon of Twice, because I like how cheerful and dorky is she since she\'s cheerful she got a beautiful smile'),
-(4, 'Do you had a girlfriend?', 'Yes. when I was a first year high school student, I won\'t go any much further details about it'),
-(5, 'Is Gutierrez or Gucci(me) a Mexican, Spanish, or Asian?', 'An Asian not debatable.');
+(4, 'Do you have a girlfriend?', 'Yes. when I was a first year high school student, I won\'t go any much further details about it'),
+(5, 'Is Gutierrez or Gucci(me) a Mexican, Spanish, or Asian?', 'An Asian not debatable.'),
+(6, 'Do you like video games?', 'Yes. I do like playing video games and I also like Nieva :)'),
+(7, 'Are you a virgin?', 'Yes. I\'m a fucking nerd what the fuck do you expect?'),
+(8, 'Do you still like your ex-crushes?', 'No. as I written here that I already found someone but I don\'t can talk to her though'),
+(9, 'Are you bitter?', 'Yes. I am bitter well getting cuckold by your friend isn\'t a very nice experience'),
+(10, 'Do you like Chinese vessels?', 'I do fucking hate Chinese VESSELS not the people the Chinese made VESSELS I hate don\'t get the wrong idea, got it? ');
 
 --
 -- Indexes for dumped tables
@@ -61,7 +66,7 @@ ALTER TABLE `trivias`
 -- AUTO_INCREMENT for table `trivias`
 --
 ALTER TABLE `trivias`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
