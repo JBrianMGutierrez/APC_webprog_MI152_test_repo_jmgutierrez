@@ -100,7 +100,16 @@ $(document).ready(function()
 </script>
 
 <h1>Trivias</h1>
-<br>
+<p></p>
+        <?php
+			if (Yii::$app->user->isGuest) {
+				
+			} elseif(Yii::$app->user->identity->username) {
+				echo Html::a('Edit a Trivia', ['trivia/index'], ['class' => 'btn btn-success']);
+			}
+			?>
+
+<br></br>
 <ul>
 <?php shuffle($trivias); ?>
 <?php foreach ($trivias as $trivia): ?>
@@ -113,6 +122,7 @@ $(document).ready(function()
     </li>	
 <?php endforeach; ?>
 <button id="show">Show all answer</button>
+<p></p>
 </ul>
 </div>
 
