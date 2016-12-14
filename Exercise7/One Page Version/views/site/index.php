@@ -99,7 +99,7 @@ $(document).ready(function()
 });
 </script>
 
-<h1>Trivias</h1>
+<h1>Trivia Section</h1>
 <p></p>
         <?php
 			if (Yii::$app->user->isGuest) {
@@ -111,7 +111,6 @@ $(document).ready(function()
 
 <br></br>
 <ul>
-<?php shuffle($trivias); ?>
 <?php foreach ($trivias as $trivia): ?>
 
     <li>
