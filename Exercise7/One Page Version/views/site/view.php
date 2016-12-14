@@ -23,7 +23,7 @@ $this->params['breadcrumbs'][] = $this->title;
 			} 
 			elseif(Yii::$app->user->identity->username)
 			{
-				echo Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']);
+				echo Html::a('Edit', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']);
 				echo Html::a('Delete', ['delete', 'id' => $model->id], 
 				[
 					'class' => 'btn btn-danger',
