@@ -1,10 +1,16 @@
-<h1>{{ question.question_text }}</h1>
+{% extends 'base/base.html' %}
+{% load static %}
 
+{% block nav-vote %}<li><a class="active" href="{% url 'polls:index' %}"><i class="fa fa-eye"></i> View vote results</a></li>{% endblock %}
+{% block content %}
+<center>
+	<h2><p>You are at result.html</p></h2>
+</center>
+<h1>{{ question.question_text }}</h1>
 <ul>
 {% for choice in question.choice_set.all %}
-    <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
+    <li>{{ choice.choice_text }} = {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
 {% endfor %}
 </ul>
-
 <a href="{% url 'polls:detail' question.id %}">Vote again?</a>
-
+{% endblock %}

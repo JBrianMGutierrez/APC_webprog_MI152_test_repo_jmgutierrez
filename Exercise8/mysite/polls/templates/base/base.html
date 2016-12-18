@@ -1,0 +1,29 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
+<html>
+    <head>
+		<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}style.css">
+        <link rel="shortcut icon" href="static/favicon.ico" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="utf-8">
+        <title>
+            {% block title %}Welcome to My Page{% endblock %}
+        </title>
+    </head>
+        <center><h1 class="titlestyle"><p class="textgreen" style="font-family:verdana;">Ask and Create a Question</p></h1></center>
+		{% block nav %}
+		<div class="engraved">
+		<ul class="topnav">
+		  <li>{% block nav-home %}<a href="{% url 'polls:index' %}"><i class="fa fa-home"></i> Home</a>{% endblock %}</li>
+		  <li>{% block nav-create %}<a href="#news"><i class="fa fa-file-o"></i> Create a Question</a>{% endblock %}</li>
+		  <li>{% block nav-vote %}<a href="#contact"><i class="fa fa-eye"></i> View vote results</a>{% endblock %}</li>
+		</ul>
+		</div>
+		{% endblock %}
+    <body>
+        <div class="box">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </body>
+</html>

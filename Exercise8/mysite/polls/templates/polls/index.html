@@ -1,10 +1,22 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block nav-home %}<li><a class="active" href="{% url 'polls:index' %}"><i class="fa fa-home"></i> Home</a></li>{% endblock %}
+{% block content %}
 {% if latest_question_list %}
+<center>
+	<h2><p>You are at index.html</p></h2>
+</center>
     <ul>
-    {% for question in latest_question_list %}
+    {% for question in latest_question_list %}	
         <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+	<br></br>		
     {% endfor %}
     </ul>
+
 {% else %}
     <p>No polls are available.</p>
 {% endif %}
+{% endblock %}
+
 
